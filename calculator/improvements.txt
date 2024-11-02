@@ -1,0 +1,36 @@
+### **Code Review:**
+
+1. **Input Validation:**
+   - You’ve implemented robust input validation, which is crucial for a good user experience.
+     It ensures the program doesn’t crash due to invalid inputs.
+   - Consider also flushing the input buffer to clear any remaining invalid input, which can help avoid infinite loops
+     during input prompts.
+
+2. **Switch Statement:**
+   - Your switch statement is clean and handles operations efficiently.
+   - To make it even clearer, you could define your arithmetic functions separately and call them from within the switch case.
+
+3. **User Experience:**
+   - The replay functionality is a nice touch, allowing users to continue using the calculator without restarting the program.
+   - You could also consider providing a summary of operations before asking if the user wants to continue.
+
+4. **Code Readability:**
+   - Your use of comments throughout the code helps with readability. It makes it easy for someone else (or yourself later)
+     to understand your thought process.
+
+5. **Functionality:**
+   - You could enhance the calculator by allowing for more complex calculations or even supporting additional operations (like modulus).
+   - You might also consider adding a history feature that shows the past calculations.
+
+### **Suggestions for Improvement:**
+1. **Refactor to Functions:**
+   - Consider creating separate functions for each arithmetic operation. This can improve modularity and make your code cleaner.
+
+2. **Error Handling Enhancements:**
+   - While you handle division by zero, you could also extend this to handle cases where the user enters non-numeric characters
+     for the numbers, ensuring that the user receives clear feedback.
+
+3. **User Interface Improvements:**
+   - If you feel comfortable, you could explore creating a graphical user interface (GUI) using a library like Qt or SFML in the future,
+     to expand your skills further.
+     
